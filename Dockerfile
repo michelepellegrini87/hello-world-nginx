@@ -13,7 +13,7 @@ RUN touch /run/nginx.pid \
   && chmod -R g+rwx /var/log/nginx /run/nginx.pid
 
 ADD start.sh /
-RUN chmod +x /start.sh && chrgrp 0 /start.sh && chmod g=u /start.sh
+RUN chmod +x /start.sh && chgrp 0 /start.sh && chmod g=u /start.sh
   
 EXPOSE 8080
 USER 1001
