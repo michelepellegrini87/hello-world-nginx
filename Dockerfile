@@ -18,5 +18,5 @@ RUN chmod +x /start.sh
 EXPOSE 8080
 USER 1001
 
-CMD ["/start.sh"]
+CMD bash -c "echo test"
 
