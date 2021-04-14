@@ -12,7 +12,7 @@ RUN touch /run/nginx.pid \
   && chgrp -R 0 /var/log/nginx /run/nginx.pid \
   && chmod -R g+rwx /var/log/nginx /run/nginx.pid
 
-ADD start.sh
+ADD start.sh /
 RUN chmod +x /start.sh
   
 EXPOSE 8080
